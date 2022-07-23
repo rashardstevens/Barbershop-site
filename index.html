@@ -11,7 +11,12 @@
       href="https://fonts.googleapis.com/css?family=Kaushan+Script|Poppins&display=swap"
       rel="stylesheet"
     />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@100&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
   </head>
   <body>
@@ -21,8 +26,8 @@
         <h1>The Shop</h1>
         <p>Best Cuts In The City</p>
         <div class="banner-btn">
-          <a href="#"><span></span>Find Out</a>
-          <a href="#"><span></span>Read More</a>
+          <a href="#footer"><span></span>Contact Barbers</a>
+          <a href="#testimonial"><span></span>Testimonials</a>
         </div>
       </div>
     </section>
@@ -127,13 +132,13 @@
           <div class="user">
             <img src="images/img-2.jpg" />
             <div class="user-info">
-              <h4>Liara Karian <i class="fa fa-twitter"></i></h4>
-              <small>@liarakarian</small>
+              <h4>Kay Bulter <i class="fa fa-twitter"></i></h4>
+              <small>@TheKayJames</small>
             </div>
           </div>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo
-            repudiandae minima placeat facere aliquam nulla.
+            Gives my boyfriend the perfect cut everytime. Thank yall for making
+            has hair look so nice.
           </p>
         </div>
         <div class="testimonial-col">
@@ -186,27 +191,6 @@
       </div>
     </section>
 
-    <script>
-      var menuBtn = document.getElementById("menuBtn");
-      var sideNav = document.getElementById("sideNav");
-      var menu = document.getElementById("menu");
-
-      sideNav.style.right = "-250px";
-
-      menuBtn.onclick = function () {
-        if (sideNav.style.right == "-250px") {
-          sideNav.style.right = "0";
-          menu.src = "images/close.png";
-        } else {
-          sideNav.style.right = "-250px";
-          menu.src = "images/menu.png";
-        }
-      };
-
-      var scroll = new SmoothScroll('a[href*="#"]', {
-        speed: 1000,
-        speedAsDuration: true,
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
